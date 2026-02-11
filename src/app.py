@@ -44,6 +44,12 @@ activities = {
 
 @app.get("/")
 def root():
+    """
+    Redirect to the static index HTML file.
+
+    Returns:
+        RedirectResponse: A redirect response that directs the user to the '/static/index.html' endpoint.
+    """
     return RedirectResponse(url="/static/index.html")
 
 
